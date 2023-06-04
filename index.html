@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mobile Web App 1</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="header mar-bot-2">
+          <div class="header__top mar-bot-3">
+            <h1 class="header __h1">Dashboard</h1>
+            <figure class="header__img-box">
+              <img src="img/avatar.png" alt="User avatar" class="header__img" />
+            </figure>
+          </div>
+          <div class="header__bottom">
+            <div class="header__input-box">
+              <input
+                type="text"
+                class="header__input"
+                placeholder="Search your records"
+              />
+              <svg class="search header__search">
+                <use xlink:href="sprite.svg#search"></use>
+              </svg>
+            </div>
+            <div class="header__notifications-box">
+              <svg class="header__notifications">
+                <use xlink:href="sprite.svg#notif"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <section class="stats mar-bot-3">
+          <div class="stats-left">
+            <h2 class="stats__header week__header">Your week</h2>
+            <div class="stats-left__main-content">
+              <figure class="stats-left__main-photo-box">
+                <img
+                  src="img/progress.png"
+                  alt="progress"
+                  class="stats-left__main-photo"
+                />
+              </figure>
+              <div class="stats__numbers-big">
+                <div class="stats__numbers stats__numbers--up">
+                  <span class="stats-left__text">6/7</span>
+                  <svg class="stats__pills-icon">
+                    <use xlink:href="sprite.svg#pills"></use>
+                  </svg>
+                </div>
+                <div class="stats__numbers stats__numbers--down">
+                  <span class="stats-left__text">4/7</span>
+                  <svg class="stats__pen-icon">
+                    <use xlink:href="sprite.svg#pen"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="stats__stats-icon-box">
+              <svg class="stats__stats-icon">
+                <use xlink:href="sprite.svg#stats"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="stats__right">
+            <div class="stats__coins">
+              <svg class="stats__coin">
+                <use xlink:href="sprite.svg#coin_gold"></use>
+              </svg>
+              <svg class="stats__coin">
+                <use xlink:href="sprite.svg#coin_bronze"></use>
+              </svg>
+              <svg class="stats__coin">
+                <use xlink:href="sprite.svg#coin_silver"></use>
+              </svg>
+              <svg class="stats__coin">
+                <use xlink:href="sprite.svg#coin_special"></use>
+              </svg>
+            </div>
+            <div class="stats__news">
+              <h2 class="stats__header">News</h2>
+              <div class="stats__news__box">
+                <div class="stats__news__text">
+                  <span class="stats__news__box-header">WHO Guidelines</span>
+                  <span class="stats__news__box-exp"
+                    >The WHO just announced new Guidelines for their ...</span
+                  >
+                </div>
+                <figure class="stats__news__img-box">
+                  <img
+                    src="img/doctor.png"
+                    alt="Doctor"
+                    class="stats__news__img"
+                  />
+                </figure>
+              </div>
+              <div class="stats__news__box">
+                <div class="stats__news__text">
+                  <span class="stats__news__box-header"
+                    >Cancer Research UK</span
+                  >
+                  <span class="stats__news__box-exp"
+                    >Cancer Research UK has a new drug ...</span
+                  >
+                </div>
+                <figure class="stats__news__img-box">
+                  <img
+                    src="img/cancer_research.png"
+                    alt="Doctor"
+                    class="stats__news__img"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="appointments mar-bot-3">
+          <h2 class="appointments__header">Your next Appointment</h2>
+          <div class="appointments-box">
+            <h3 class="appointments-box__header">Dr. Shmitz</h3>
+            <span class="appointments-box__job">Neurologist</span>
+            <div class="appointments-box__contacts">
+              <svg class="appointments-box__email">
+                <use xlink:href="sprite.svg#email"></use>
+              </svg>
+              <span class="appointments-box__contact">schmitz@aol.de </span>
+              <svg class="appointments-box__phone">
+                <use xlink:href="sprite.svg#phone"></use>
+              </svg>
+              <span class="appointments-box__contact">+49 989 232</span>
+            </div>
+            <div class="appointments-box__when">
+              <div class="appointments-box__when--top">
+                <span class="appointments-box__when--top--header">Date</span>
+                <span class="appointments-box__when--top--header">Time</span>
+              </div>
+              <div class="appointments-box__when--bottom">
+                <span class="appointments-box__when--bottom--header"
+                  >20.04.2023</span
+                >
+                <span class="appointments-box__when--bottom--header"
+                  >16:30</span
+                >
+              </div>
+            </div>
+
+            <div class="appointments-box__address">
+              <p class="appointments-box__address__header">Address</p>
+              <p class="appointments-box__complete-address">
+                Winklergasse 45, 10117 Berlin
+              </p>
+              <div class="appointments-box__google-map">
+                <svg class="appointments-box__address__location">
+                  <use xlink:href="sprite.svg#location"></use>
+                </svg>
+                <a href="#" class="appointments-box__google-link"
+                  >Open in Google Maps</a
+                >
+              </div>
+            </div>
+            <div class="appointments-box__user-buttons">
+              <button class="button">
+                <svg class="appointments-box__button-icon">
+                  <use xlink:href="sprite.svg#email"></use>
+                </svg>
+              </button>
+              <button class="button">
+                <svg class="appointments-box__button-icon">
+                  <use xlink:href="sprite.svg#phone"></use>
+                </svg>
+              </button>
+              <button class="button">
+                <svg class="appointments-box__button-icon">
+                  <use xlink:href="sprite.svg#pen2"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <h2 class="med-header">Your Medications Today</h2>
+        <section class="med">
+          <div class="med__top-box">
+            <div class="med__top-box--left">
+              <h2 class="med__header">Aspirin</h2>
+              <p class="med__exp">ASS, 500mg<br />BAYER, coated pills</p>
+              <p class="med__dose">2x Daily</p>
+            </div>
+            <figure class="med__img-box">
+              <img src="img/aspirin.png" alt="Aspirin" class="med__img" />
+            </figure>
+          </div>
+          <div>
+            <svg class="med__notif">
+              <use xlink:href="sprite.svg#notif2"></use>
+            </svg>
+            <div class="med__bottom-box">
+              <span class="med__time">6:00, 22:00</span>
+              <button class="button">
+                <svg class="appointments-box__button-icon">
+                  <use xlink:href="sprite.svg#pen2"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <div class="plus-div">
+          <button class="button-plus">
+            <svg class="plus">
+              <use xlink:href="sprite.svg#plus"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu mar-bot-2">
+          <svg class="menu__icon">
+            <use xlink:href="sprite.svg#calendar"></use>
+          </svg>
+          <svg class="menu__icon">
+            <use xlink:href="sprite.svg#search"></use>
+          </svg>
+          <svg class="menu__icon">
+            <use xlink:href="sprite.svg#upload"></use>
+          </svg>
+          <svg class="menu__icon">
+            <use xlink:href="sprite.svg#profile"></use>
+          </svg>
+        </div>
+        <div class="dev">
+          <a href="https://github.com/MCKH03" class="developer"
+            >Mehrshad Cheshm Khavari</a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
